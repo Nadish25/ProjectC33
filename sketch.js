@@ -1,7 +1,4 @@
-const Engine = Matter.Engine;
-const World = Matter.World;
-const Events = Matter.Events;
-const Bodies = Matter.Bodies;
+
 
  
 var particles = [];
@@ -18,7 +15,7 @@ var particle;
 
 function setup() {
   createCanvas(800, 800);
-  engine = Engine.create();
+  engine = Matter.Engine.create();
   world = engine.world;
   
   ground = new Ground(width/2,height,width,20);
@@ -64,7 +61,7 @@ function draw() {
   background("black");
   textSize(20)
  
-  Engine.update(engine);
+  Matter.Engine.update(engine);
  
  
   
