@@ -1,6 +1,3 @@
-
-
- 
 var particles = [];
 var plinkos = [];
 var divisions= [];
@@ -52,7 +49,8 @@ function setup() {
 
     
 
-    
+    Matter.Engine.run(engine);
+
 }
  
 
